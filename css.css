@@ -1,6 +1,7 @@
 *{
 padding:0;
 margin:0;
+text-decoration: none;
 }
 body{
     /* position:relative; */
@@ -9,6 +10,7 @@ body{
     align-items: center;
     height: 100vh;
     background-color: #202632;
+    flex-direction: column;
 
 }
 .container
@@ -35,8 +37,17 @@ transition: all 0.3s ease;
 p{
     line-height: 50px;
     padding-bottom: 30px;
+    color: white;
+    font-weight: bold;
 }
-.container img{
+a{
+    color: #52feaa;
+    transition: all 0.3s ease;
+}
+a:hover{
+    text-shadow: 0 0 10px;
+}
+.container .click{
     position: absolute;
     cursor: pointer;
     bottom: -20px;
@@ -47,7 +58,19 @@ p{
     transform: translate(-50%);
     transition: all 0.3s ease;
 }
-.container img:hover{
+.line{
+    left: 0;
+    width: 80%;
+    margin-bottom: 40px;
+}
+.name{
+    margin: 20px 0;
+    font-size: 15px;
+}
+.sp{
+    color: #52feaa;
+}
+.container .click:hover{
     box-shadow: 0 0 10px #52feaa;
 }
 
@@ -61,7 +84,10 @@ p{
     .container{
 width: 80%;
     }
-    .container img{
+    .container .click{
         padding: 10px;
+    }
+    .name{
+        font-size: 10px;
     }
 }
